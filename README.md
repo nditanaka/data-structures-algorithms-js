@@ -21,8 +21,8 @@ The most common runtimes from fastest to slowest:
 
 ### Further reading
 
-[1][https://www.bigocheatsheet.com/](https://www.bigocheatsheet.com/)
-[2][https://bradfieldcs.com/algos/analysis/big-o-notation/](https://bradfieldcs.com/algos/analysis/big-o-notation/)
+[1][https://www.bigocheatsheet.com/](https://www.bigocheatsheet.com/)\
+[2][https://bradfieldcs.com/algos/analysis/big-o-notation/](https://bradfieldcs.com/algos/analysis/big-o-notation/)\
 
 ## Instructions for using examples
 
