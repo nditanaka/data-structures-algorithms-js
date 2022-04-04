@@ -3,7 +3,7 @@
 // space complexity - O(n) as 2 additional objects of length 2n are allocated in memory
 function frequencyCounter(arr1, arr2) {
     // initialize counter objects since they have fast access O(1) and are unordered
-    // return false if arr1 and arr2 lengths are not the same
+    // return false if arr1 and arr2 lengths are not the same length
     // loop over arr1 and arr2 and populate counts in objects
     // loop over count1 and if either count2 doesn't contain count1's key ^ 2, or count1[key] !== count2[key^2], return false
     // arr2's keys are arr1's ^ 2
