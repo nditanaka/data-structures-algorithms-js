@@ -1,5 +1,6 @@
 // Frequency counter pattern
-// O(n), T(n) = n + n + n + n = O(4n)
+// time complexity - O(n), T(n) = n + n + n + n = O(4n)
+// space complexity - O(n) as 2 additional objects of length 2n are allocated in memory
 function frequencyCounter(arr1, arr2) {
     // initialize counter objects since they have fast access O(1) and are unordered
     // return false if arr1 and arr2 lengths are not the same
@@ -34,7 +35,8 @@ function naivefrequencyCounter1(arr1, arr2) {
     // if arr[i] is not in arr2 then set result to false
     // else result = true
     //  return result
-    // O(n^2) - this is the naive approach and we should avoid nested loops as they scale badly as n grows.
+    // time complexity - O(n^2) - this is the naive approach and we should avoid nested loops as they scale badly as n grows.
+    // space complexity - O(1) - only the boolean variable result is allocated
     let result = true
     if(arr1.length === arr2.length){
         for(let i = 0; i < arr1.length; i++){
