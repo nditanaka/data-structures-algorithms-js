@@ -1,3 +1,29 @@
+// Frequency checker pattern variation
+// O(n) because each for loop adds n operations thus T(n) = n + n = 2n ∴ O(n)
+function isAnagram(str1, str2) {
+    // if str1.length !== str2.length return false
+    // iterate over str1 and store chars and counts in lookup
+    // iterate over str2 and check if vals are in lookup's keys. if not return false
+    // if str2 val is in lookup, decrement count. 
+    // If you check a val that is not lookup, it will be falsy
+    if(str1.length !== str2.length){return false}
+    const lookup = {}
+    for(let val of str1){
+        lookup[val] ? lookup[val] += 1 : lookup[val] = 1
+    }
+    console.log('str1 ->', str1)
+    console.log('str2 ->', str2)
+    console.log('lookup complete with str1 ->', lookup)
+    for(let val of str2){
+        if(!lookup[val]){
+            return false
+        } else {
+            lookup[val] -= 1
+        }
+    }
+        return true
+}
+
 // O(n) but asymptotic notation goes to T(n) = n + n + n = O(3n) ∴ O(n). 
 // for array size n, n = 1000 means ~3000 operations.
 // 2 nested loops would mean T(n) = n * n = O(n^2). We should avoid nested loops.
@@ -27,28 +53,3 @@ function naiveIsAnagram(str1, str2) {
     return true
 }
 
-// Frequency checker pattern variation
-// O(n) because each for loop adds n operations thus T(n) = n + n = 2n ∴ O(n)
-function isAnagram(str1, str2) {
-    // if str1.length !== str2.length return false
-    // iterate over str1 and store chars and counts in lookup
-    // iterate over str2 and check if vals are in lookup's keys. if not return false
-    // if str2 val is in lookup, decrement count. 
-    // If you check a val that is not lookup, it will be falsy
-    if(str1.length !== str2.length){return false}
-    const lookup = {}
-    for(let val of str1){
-        lookup[val] ? lookup[val] += 1 : lookup[val] = 1
-    }
-    console.log('str1 ->', str1)
-    console.log('str2 ->', str2)
-    console.log('lookup complete with str1 ->', lookup)
-    for(let val of str2){
-        if(!lookup[val]){
-            return false
-        } else {
-            lookup[val] -= 1
-        }
-    }
-        return true
-}
