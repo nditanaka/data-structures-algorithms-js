@@ -35,6 +35,8 @@ const binarySearch = (arr, val) => {
     return -1
 }
 
+binarySearch([1,2,3,4,5,5,6,7,8,9,10],2)
+
 // Naive search/ Linear search
 // time complexity O(n)
 // space complexity O(1)
@@ -46,6 +48,8 @@ const linearSearch = (arr, val) => {
     }
     return -1
 }
+
+linearSearch([1,2,3,4,5,5,6,7,8,9,10],2)
 
 
 
