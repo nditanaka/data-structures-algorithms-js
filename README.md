@@ -23,6 +23,7 @@ The most common runtimes from fastest to slowest:
 
 [1][https://www.bigocheatsheet.com/](https://www.bigocheatsheet.com/)\
 [2][https://bradfieldcs.com/algos/analysis/big-o-notation/](https://bradfieldcs.com/algos/analysis/big-o-notation/)
+[3][https://pythontutor.com/javascript.html#mode=display](https://pythontutor.com/javascript.html#mode=display)
 
 ## Instructions for using examples
 
