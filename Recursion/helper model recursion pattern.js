@@ -18,3 +18,29 @@ function collectOdds(numsArr) {
 }
 
 collectOdds([1,2,3,4,5,6,6,7,8,9,10,11])
+
+
+// Pure recursion without helper function
+function collectOddsPure(arr){
+    let newArr = []
+    if(arr.length === 0){
+        return
+    }
+    if(arr[0] % 2 !== 0 ){ 
+        newArr.push(arr[0])
+    }
+    newArr = newArr.concat(collectOddsPure(arr.slice(1)))
+    return newArr
+}
+
+collectOddsPure([1, 2, 3, 4, 5, 6, 6, 7, 8, 9, 10, 11])
+
+/*
+Pure recursion tips
+
+- For arrays, use methods like slice, the spread operator and concat
+  that make copies of arrays so you don't mutate the original input array
+- Strings are immutable so you will need to use methods like slice,
+  substr or substring to make copies of strings
+- To make copies of objects, use Object.assign, or the spread operator.
+*/
