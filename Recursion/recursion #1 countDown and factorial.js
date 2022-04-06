@@ -53,5 +53,6 @@ iterativeCountDown(5)
 
 // common problems implementing recursion:
 // 1. no base case resulting in infinite loops/ max call stack size exceeded errors which is a stack overflow error.
-// 2. returning the wrong thing/ forgetting to return. You also have to remember to call the function on a changing value. 
+// 2. returning the wrong thing/ forgetting to return. 
+// 3. remember to call the function on a changing value. 
 //    if called on the same thing, the result of factorial will not change. Recursion is built on returning in your base case, then returning in the function.
