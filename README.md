@@ -4,7 +4,7 @@
 
 There are three different notations:
 
-- big O - worst case. this is most important because in swe we typically plan for the worst case.
+- big O - worst case. this is most important because in software engineering we typically plan for the worst case.
 - big Theta (Θ) - time complexity is the same for all n
 - big Omega (Ω) - best case
 

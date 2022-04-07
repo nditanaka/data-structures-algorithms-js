@@ -1,8 +1,9 @@
 // involves creating a 'window' which can either be an array or number from one position to another
 // depending on a certain condition, the window either increases or closes ( and a new window is created)
 // very useful for keeping track of a subset of data in an array/ string eg. finding the longest sequence of unique characters,
-// find the maximum sum of n consecutive elements in an array.
 
+
+// find the maximum sum of n consecutive elements in an array.
 // maxSubarraySum - sliding window pattern
 // time complexity - O(n)
 // space complexity - O(1) as no extra memory is allocated except for variables
@@ -21,6 +22,8 @@ function maxSubarraySum(arr, num) {
     return maxSum
 
 }
+
+maxSubarraySum([1,2,3,4,5,6,7,8,9],2)
 
 // naive approach
 // time complexity - o(n^2) - scales badly as n grows
