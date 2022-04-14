@@ -19,6 +19,14 @@ The most common runtimes from fastest to slowest:
 6. exponential O(2^N)
 7. factorial O(N!)
 
+## [Big O of Sorting Algorithms](./Sorting%20Algorithms/SORTING.md)
+
+| Algorithm       |Time complexity (Best) | Time complexity (Average) | Time complexity (Worst) | Space complexity |
+|-----------------|-----------------------|---------------------------|-------------------------|------------------|
+| Bubble sort     | O(n)                  | O(n^2)                    | O(n^2)                  | O(1)             |
+| Insertion sort  | O(n)                  | O(n^2)                    | O(n^2)                  | O(1)             |
+| Selection sort  | O(n^2)                | O(n^2)                    | O(n^2)                  | O(1)             |
+
 ### Further reading
 
 [1][https://www.bigocheatsheet.com](https://www.bigocheatsheet.com/)\

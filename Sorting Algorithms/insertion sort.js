@@ -14,6 +14,13 @@
  * Continue to the next element and if it is in 
  */
 
+/** 
+ * it is considered an online algorithm, ie. it functions with continuously incoming data.
+ * it does not require all the data in the array to be present from the onset.It works well where data is coming in live,
+ * or being streamed in.
+ * time complexity - O(n^2)
+ * space complexity - O(1)
+*/
  function insertionSort(arr) {
     for (let i = 1; i < arr.length; i++) {
         let currentVal = arr[i]
