@@ -7,7 +7,7 @@
  * HELPER FUNCTION
  * it is useful to first implement a helper function for merging two sorted arrays.
  * Given two arrays that are sorted, this helper function should create a new array which is also sorted, and consists 
- * of all all the elements in the two input arrays.
+ * of all the elements in the two input arrays.
  * This function should run in O(n+m) time and O(n+m) space and should not modify the parameters passed to it where n and m
  * are the lengths of input arrays n and m respectively
  * 
@@ -16,7 +16,7 @@
  * looked at: 
  *          - if the value in the first array is smaller than the value in the second array, push the value in the first array
  *            into our results and move on to the next value in the first array.
- *          - if the value in the first array is larger than the vlaue in the second array, push the value in the second array
+ *          - if the value in the first array is larger than the value in the second array, push the value in the second array
  *            into our results and move on to the next value in the second array.
  *          - once we exhaust one array, push in all remaining values from the other array.
  * 
