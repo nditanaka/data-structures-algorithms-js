@@ -20,5 +20,3 @@ function order(words){
       let sentence = wordsDict.join(' ')
       return sentence
 }
-    
-module.exports = {order}
